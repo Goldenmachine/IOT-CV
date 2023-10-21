@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.js">
+    <title>CV</title>
+    <style>
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            transition: top 0.3s;
+        }
+        .content {
+            height: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header"><img src="giphy.gif"  alt="Moving Image"></div></div>
+    <div class="content"></div>
+    <script src="index.js"></script>
+    <script>
+        const header = document.querySelector('.header');
+        let prevScrollPos = window.pageYOffset;
+        window.onscroll = function() {
+            const currentScrollPos = window.pageYOffset;
+
+            if (prevScrollPos > currentScrollPos) {
+                header.style.top = "0";
+            } else {
+                header.style.top = `-${header.offsetHeight}px`;
+            }
+            prevScrollPos = currentScrollPos;
+        };
+    </script>
+    <div class="container">
+        <div class="avatar">
+            <img src="LINE_ALBUM_291265-2166.jpg" >
+        </div>
+        <div class="name">
+            <h1>Kantapong surachit </h1>
+            <div class="specialize">
+            Instrument Engineer
+            </div>
+            <ul class="contact">
+                <li>
+                    <span>P</span>0985843629
+                </li>
+                <li>
+                    <span>E</span>kantapongsurachit@gmail.com
+                </li>
+                <li>
+                    <span><div id="facebook-icon" class="facebook-icon"></div>
+                    <script src="index.js"></script></span>Surachit KR
+                </li>
+                <li>
+                    <span><div id="ig-icon" class="ig-icon"></div>
+                        <script src="index.js"></script></span>ksr_yuu
+                </li>
+            </ul>
+        </div>
+        <div class="about">
+            <h2>About me</h2>
+            Name : Kantapong surachit <br>
+            Nick Name : Rew <br>
+            Brith of date : 07 July 2000 <br>
+            Age: 23 year old <br>
+            Nationality : Thai <br>
+            <div class="info">
+                <ul>
+                    <h1>Education</h1>
+                    <li>
+                        King Mongkut’s University of Technology, North Bangkok
+                        Bachelor of Engineering : <br><b>Instrumentation and Control Systems Engineering</b>   
+                    </li>                     
+                </ul>
+            </div>
+            <div id="github-icon" class="github-icon"></div>
+            <script src="index.js"></script>
+        </div>
+<div class="exp">
+            <h2>EXPERIENCE</h2>
+            <div class="item">
+                <h4>Trainee</h4>
+                <div class="time">
+                    <span>
+                        2018
+                    </span>
+                    <div class="des">
+                        Bee Com Shop
+                        Technician
+                        Responsible<br>
+                        1. Closed-circuit camera repairing and fixing<br>
+                        2. Electronic partreplacing
+                    </div>
+                </div>
+                <div class="time">
+                    <span>
+                        2020
+                    </span>
+                    <div class="des">
+                        Mitsubishi Electric Consumer Products 
+                        (Thailand) Co., Ltd.
+                        Air Conditioner Assembly Department
+                        Responsible<br>
+                        1. Air Condenser assembling<br>
+                        2. Air Condenser part checking
+                    </div>
+                </div>
+            </div>
+            <h2 class="Skills">Skills</h2>
+                <li>Microsoft</li>
+                <li>c++</li>
+            <h2 class="My hobbie">My hobbie</h2>
+            <li>Play game</li>
+            <li>Watch movie</li>
+            <li>Read manga/novel</li>
+        </div>
+    </div>
+</body>
+</html>
