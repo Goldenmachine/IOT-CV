@@ -28,7 +28,7 @@ body{
     height: 1000px;
 }
 .container {
-    background-image: url('istockphoto.jpg');
+    background-image: url('img/istockphoto.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     margin: auto;
@@ -145,18 +145,18 @@ h2{
 .facebook-icon {
     width: 20px;
     height: 20px;
-    background: url('fb_icon.png') no-repeat center center/cover;
+    background: url('img/fb_icon.png') no-repeat center center/cover;
     cursor: pointer;
 }
 .ig-icon {
     width: 20px;
     height: 20px;
-    background: url('ig.png') no-repeat center center/cover;
+    background: url('img/ig.png') no-repeat center center/cover;
     cursor: pointer;
 }
 .github-icon {
     width: 100px;
     height: 100px;
-    background: url('github2.png') no-repeat center center/contain;
+    background: url('img/github2.png') no-repeat center center/contain;
     cursor: pointer;
 }
